@@ -16,17 +16,7 @@ export const navLinks = [
   },
 
   {
-    id: 5,
-    title: "Réalisations",
-    path: "/réalisations",
-  },
-  {
-    id: 6,
-    title: "Blog",
-    path: "/blog",
-  },
-  {
-    id: 7,
+    id: 4,
     title: "Contact",
     path: "/contact",
   },
