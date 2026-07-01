@@ -9,7 +9,7 @@ function Router() {
   return (
     <>
       <Routes>
-        <Route path="/Accueil" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />

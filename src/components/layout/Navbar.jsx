@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import { CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
 import { memo } from "react";
+import { Link } from "react-router-dom";
 const Navbar = ({ open, setOpen }) => {
   return (
     <header
@@ -21,9 +22,9 @@ const Navbar = ({ open, setOpen }) => {
     >
       <div className="container flex h-[82px] items-center justify-between">
         {/* Logo */}
-
-        <h1
-          className="
+        <Link to="/">
+          <h1
+            className="
         cursor-pointer
         text-[34px]
         font-extrabold
@@ -33,10 +34,11 @@ const Navbar = ({ open, setOpen }) => {
         duration-300
         hover:scale-105
       "
-        >
-          go
-          <span className="text-secondary">study</span>
-        </h1>
+          >
+            go
+            <span className="text-secondary">study</span>
+          </h1>
+        </Link>
 
         {/* Desktop Menu */}
 
