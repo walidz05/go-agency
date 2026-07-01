@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #050816;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Sora";
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #2563eb;
+  filter: blur(180px);
+  opacity: 0.25;
+  border-radius: 9999px;
+  top: 100px;
+  left: -250px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 450px;
+  height: 450px;
+  background: #06b6d4;
+  filter: blur(180px);
+  opacity: 0.2;
+  border-radius: 9999px;
+
+  top: -100px;
+  right: -200px;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("./assets/fonts/Sora-ExtraBold.ttf");
+  font-weight: 800;
+}
