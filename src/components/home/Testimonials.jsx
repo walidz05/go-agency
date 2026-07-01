@@ -49,6 +49,7 @@ const Testimonials = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <img
+                    loading="lazy"
                     src={item.image}
                     alt={item.name}
                     className="h-12 w-12 rounded-full border-2 border-blue-500 object-cover"

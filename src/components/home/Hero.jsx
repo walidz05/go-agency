@@ -90,7 +90,7 @@ function Hero() {
 
           {/* Phone */}
 
-          <img src={heroImg} alt="heroImg" className="z-10" />
+          <img loading="lazy" src={heroImg} alt="heroImg" className="z-10" />
 
           {/* Floating Card 1 - Client Satisfaction */}
           <div className="absolute top-10 left-0 z-30 rounded-2xl border border-white/10 bg-white/10 backdrop-blur-xl px-5 py-4 shadow-2xl animate-float">

@@ -81,6 +81,7 @@ const Hero = () => {
           {/* Right */}
           <div className="relative">
             <img
+              loading="lazy"
               src={serviceImg}
               alt="Services"
               className="mx-auto w-full max-w-2xl"

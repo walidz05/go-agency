@@ -42,6 +42,7 @@ function TrustedCompanies() {
               className="group cursor-pointer transition-all duration-300 hover:scale-105"
             >
               <img
+                loading="lazy"
                 src={item.logo}
                 alt={item.name}
                 className="h-32 w-auto opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"

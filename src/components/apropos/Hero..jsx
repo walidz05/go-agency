@@ -45,6 +45,7 @@ function Hero() {
           {/* Right */}
           <div>
             <img
+              loading="lazy"
               src={aboutImage}
               alt="About"
               className="w-full rounded-3xl object-cover"

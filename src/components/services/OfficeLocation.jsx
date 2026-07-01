@@ -22,6 +22,7 @@ const OfficeLocation = () => {
 
             <div className="relative mt-8 overflow-hidden rounded-2xl">
               <img
+                loading="lazy"
                 src={mapImg}
                 alt="Map"
                 className="h-[460px] w-full object-cover"
