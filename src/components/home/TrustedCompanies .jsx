@@ -1,8 +1,8 @@
-import google from "../../assets/images/logos/google.svg";
-import meta from "../../assets/images/logos/meta.svg";
-import airbnb from "../../assets/images/logos/airbnb.svg";
-import shopify from "../../assets/images/logos/shopify.svg";
-import slack from "../../assets/images/logos/slack.svg";
+import google from "../../assets/images/logos/google.webp";
+import meta from "../../assets/images/logos/meta.webp";
+import tiktok from "../../assets/images/logos/tiktok.webp";
+import shopify from "../../assets/images/logos/shopify.webp";
+import slack from "../../assets/images/logos/slack.webp";
 
 const companies = [
   {
@@ -15,7 +15,7 @@ const companies = [
   },
   {
     name: "Airbnb",
-    logo: airbnb,
+    logo: tiktok,
   },
   {
     name: "Shopify",
