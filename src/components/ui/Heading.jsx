@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 function Heading({ children1, children2, textAlign = "" }) {
   return (
     <div
@@ -18,4 +20,4 @@ function Heading({ children1, children2, textAlign = "" }) {
   );
 }
 
-export default Heading;
+export default memo(Heading);

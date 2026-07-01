@@ -11,6 +11,7 @@ import {
   serviceLinks,
   legalLinks,
 } from "../../data/footerLinks";
+import { memo } from "react";
 
 const Footer = () => {
   return (
@@ -139,4 +140,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
