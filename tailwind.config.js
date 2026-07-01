@@ -1,3 +1,5 @@
+import { visualizer } from "rollup-plugin-visualizer";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -38,6 +40,9 @@ export default {
   },
 
   plugins: [
+    visualizer({
+      open: true,
+    }),
     function ({ addComponents }) {
       addComponents({
         ".btn": {
