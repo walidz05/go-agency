@@ -46,53 +46,53 @@ body::after {
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-Bold.ttf");
+  src: url("./assets/fonts/Sora-Bold.woff2");
   font-weight: 700;
 }
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-ExtraBold.ttf");
+  src: url("./assets/fonts/Sora-ExtraBold.woff2");
   font-weight: 800;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-ExtraLight.ttf");
+  src: url("./assets/fonts/Sora-ExtraLight.woff2");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-Light.ttf");
+  src: url("./assets/fonts/Sora-Light.woff2");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-Regular.ttf");
+  src: url("./assets/fonts/Sora-Regular.woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-Medium.ttf");
+  src: url("./assets/fonts/Sora-Medium.woff2");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-SemiBold.ttf");
+  src: url("./assets/fonts/Sora-SemiBold.woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-Bold.ttf");
+  src: url("./assets/fonts/Sora-Bold.woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-ExtraBold.ttf");
+  src: url("./assets/fonts/Sora-ExtraBold.woff2");
   font-weight: 800;
 }
