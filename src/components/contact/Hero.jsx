@@ -9,7 +9,7 @@ import {
 } from "react-icons/ri";
 import { HiOutlineArrowRight } from "react-icons/hi2";
 
-const Hero = () => {
+const Hero = ({ formData, handleChange, handleSubmit }) => {
   return (
     <section className="py-[60px]">
       <div className="container mx-auto">
@@ -83,48 +83,95 @@ const Hero = () => {
               Envoyez-nous un message
             </h3>
 
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5 ">
               <div className="grid gap-5 md:grid-cols-2">
                 <input
+                  value={formData.name}
+                  onChange={handleChange}
+                  name="name"
                   type="text"
                   placeholder="Nom complet"
                   className="rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-white outline-none focus:border-primary"
                 />
 
                 <input
+                  value={formData.email}
+                  onChange={handleChange}
+                  name="email"
                   type="email"
                   placeholder="Email professionnel"
                   className="rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-white outline-none focus:border-primary"
                 />
 
                 <input
+                  value={formData.company}
+                  onChange={handleChange}
+                  name="company"
                   type="text"
                   placeholder="Entreprise"
                   className="rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-white outline-none focus:border-primary"
                 />
 
                 <input
+                  value={formData.phone}
+                  onChange={handleChange}
+                  name="phone"
                   type="tel"
                   placeholder="Téléphone"
                   className="rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-white outline-none focus:border-primary"
                 />
               </div>
 
-              <select className="w-full rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-gray-400 outline-none focus:border-primary">
-                <option>Service qui vous intéresse</option>
-                <option>Marketing</option>
-                <option>Social Media</option>
-                <option>Site Web</option>
-                <option>Production Vidéo</option>
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="w-full rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-gray-400 outline-none focus:border-primary"
+              >
+                <option value="">Service qui vous intéresse</option>
+
+                <option value="Stratégie Marketing 360°">
+                  Stratégie Marketing 360°
+                </option>
+
+                <option value="Audit Digital">Audit Digital</option>
+
+                <option value="Positionnement de marque">
+                  Positionnement de marque
+                </option>
+
+                <option value="Stratégie d’acquisition">
+                  Stratégie d’acquisition
+                </option>
+
+                <option value="Création de contenu">Création de contenu</option>
+
+                <option value="Social Media Management">
+                  Social Media Management
+                </option>
+
+                <option value="Media Buying">Media Buying</option>
+
+                <option value="Création de site web">
+                  Création de site web
+                </option>
+
+                <option value="Production vidéo">Production vidéo</option>
               </select>
 
               <textarea
+                value={formData.message}
+                onChange={handleChange}
+                name="message"
                 rows={6}
                 placeholder="Parlez-nous de votre projet..."
                 className="w-full rounded-lg border border-[#16356A] bg-[#09152D] px-4 py-3 text-white outline-none focus:border-primary"
               />
 
-              <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-4 font-semibold text-black transition hover:opacity-90">
+              <button
+                type="submit"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-4 font-semibold text-black transition hover:opacity-90"
+              >
                 Envoyer le message
                 <HiOutlineArrowRight />
               </button>
