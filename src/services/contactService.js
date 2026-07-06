@@ -1,5 +1,5 @@
 const API_URL =
-  "https://script.google.com/macros/s/AKfycbxUzsu53hmpNrV4M0pq7yb0urEYtB4bkJjnGBGLOGcQfKwnME4aCjU1fGQ6vhQuPwX7/exec";
+  "https://script.google.com/macros/s/AKfycbza2PkTuGuaaDuDEXG8qNh-yZVs6fcxpTP8mRSY8yvYDOOKRhnLlfLOBLaCMwb0W25O/exec";
 
 export const sendContact = async (formData) => {
   const body = new FormData();
