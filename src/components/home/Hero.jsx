@@ -8,7 +8,7 @@ import {
 } from "react-icons/ri";
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#040814] py-[50px] sm:py-[60px]">
+    <section className="relative overflow-hidden bg-[#040814] sm:py-[60px]">
       {/* Glow */}
       <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
 
@@ -26,7 +26,6 @@ function Hero() {
           </div>
           <h1
             className=" lg:w-full
-                         w-[80%]
                         text-3xl
                         leading-tight
                         font-bold
