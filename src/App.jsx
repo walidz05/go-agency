@@ -13,7 +13,7 @@ function App() {
       <ScrollToTop />
       <Navbar open={open} setOpen={setOpen} />
       <MobileMenu open={open} setOpen={setOpen} />
-      <div className="py-[60px]">
+      <div className="sm:py-[60px]">
         <Router />
       </div>
       <Footer />
