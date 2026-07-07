@@ -38,7 +38,7 @@ const Hero = () => {
               NOS SERVICES
             </span>
 
-            <h2 className="mt-4 text-4xl font-bold leading-tight text-white lg:text-4xl">
+            <h2 className="mt-4 text-4xl font-bold text-white leading-tight">
               Des solutions marketing
               <br />
               pour booster votre
