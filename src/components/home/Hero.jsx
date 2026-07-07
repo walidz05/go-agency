@@ -12,7 +12,7 @@ function Hero() {
       {/* Glow */}
       <div className="absolute left-0 top-0  h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
 
-      <div className="mx-auto flex min-h-screen max-w-7xl items-center px-6 py-20">
+      <div className="container mx-auto flex min-h-screen max-w-7xl items-center">
         {/* Left */}
         <div className="lg:w-[55%] flex flex-col gap-3 items-baseline">
           <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#1A3D73] bg-[#08152D] px-5 py-3 shadow-[0_0_25px_rgba(0,102,255,0.15)]">
