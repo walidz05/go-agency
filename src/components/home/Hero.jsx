@@ -10,7 +10,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#040814] py-[60px]">
       {/* Glow */}
-      <div className="absolute left-0 top-0  h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
+      <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
 
       <div className="container mx-auto m sm:flex min-h-screen items-center">
         {/* Left */}
@@ -25,7 +25,7 @@ function Hero() {
             </span>
           </div>
           <h1
-            className="w-[80%]
+            className="w-[90%]
                         sm:w-full
                         text-4xl
                         leading-tight
