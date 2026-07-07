@@ -25,8 +25,8 @@ function Hero() {
             </span>
           </div>
           <h1
-            className=" w-[90%]
-                        sm:w-full
+            className=" 
+                     
                         text-4xl
                         leading-tight
                         font-bold
