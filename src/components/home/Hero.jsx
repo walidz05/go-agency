@@ -26,12 +26,11 @@ function Hero() {
           </div>
           <h1
             className="
-                        text-3xl
+                        sm:text-3xl
                         leading-tight
                         font-bold
                         text-white      
                         lg:text-5xl
-                  
                         "
           >
             Nous transformons votre
