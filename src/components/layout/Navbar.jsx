@@ -26,7 +26,7 @@ const Navbar = ({ open, setOpen }) => {
           <h1
             className="
         cursor-pointer
-        text-[34px]
+        text-[28px]
         font-extrabold
         tracking-[-1px]
         text-white
@@ -35,8 +35,8 @@ const Navbar = ({ open, setOpen }) => {
         hover:scale-105
       "
           >
-            go
-            <span className="text-secondary">study</span>
+            Go
+            <span className="text-secondary">Boosted</span>
           </h1>
         </Link>
 
