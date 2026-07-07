@@ -20,7 +20,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
               Contactez-nous
             </span>
 
-            <h2 className="mt-4 text-4xl font-bold text-white leading-tight">
+            <h2 className="mt-4 text-3xl lg:text-5xl font-bold text-white leading-tight">
               Parlons de votre projet
               <br />
               et <span className="text-secondary">concrétisons vos idées.</span>
