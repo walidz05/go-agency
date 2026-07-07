@@ -32,7 +32,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
             </p>
 
             {/* Features */}
-            <div className="mt-12 grid grid-cols-3 gap-6">
+            <div className="mt-12 grid grid-cols-1 gap-6">
               <div>
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#16356A] bg-[#09152D]">
                   <RiFlashlightLine className="text-2xl text-secondary" />
