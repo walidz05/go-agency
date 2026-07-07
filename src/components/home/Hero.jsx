@@ -25,7 +25,7 @@ function Hero() {
             </span>
           </div>
           <h1
-            className=" sm:w-full
+            className=" lg:w-full
                          w-[80%]
                         text-3xl
                         leading-tight
@@ -35,7 +35,7 @@ function Hero() {
                         "
           >
             Nous transformons votre
-            <span className="text-secondary leading-normal  font-extrabold mr-2 ml-2">
+            <span className="text-secondary leading-normal   mr-2 ml-2">
               communication
             </span>
             en moteur <span className="text-secondary">de croissance</span>
