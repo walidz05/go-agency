@@ -3,11 +3,23 @@ import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import ScrollToTop from "./components/ui/ScrollToTop";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileMenu from "./components/layout/MobileMenu";
+import Loader from "./components/ui/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <>
       <ScrollToTop />

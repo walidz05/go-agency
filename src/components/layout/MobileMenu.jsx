@@ -41,8 +41,8 @@ const MobileMenu = ({ open, setOpen }) => {
             text-white
           "
           >
-            go
-            <span className="text-secondary">study</span>
+            Go
+            <span className="text-secondary">Boosted</span>
           </h1>
 
           {/* Navigation */}
