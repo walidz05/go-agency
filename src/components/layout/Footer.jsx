@@ -98,7 +98,7 @@ const Footer = () => {
           <div>
             <h3 className="mb-5 font-semibold text-white">Suivez-nous</h3>
 
-            <div className="flex gap-4">
+            <div className="flex sm:flex-col gap-4">
               {[FaFacebookF, FaLinkedinIn, FaInstagram, FaTiktok].map(
                 (Icon, index) => (
                   <a

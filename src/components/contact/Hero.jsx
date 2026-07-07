@@ -20,7 +20,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
               Contactez-nous
             </span>
 
-            <h2 className="mt-4 text-3xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="mt-4 text-3xl font-bold text-white leading-tight">
               Parlons de votre projet
               <br />
               et <span className="text-secondary">concrétisons vos idées.</span>
@@ -32,7 +32,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
             </p>
 
             {/* Features */}
-            <div className="mt-12 grid grid-cols-1 gap-6">
+            <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6">
               <div>
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#16356A] bg-[#09152D]">
                   <RiFlashlightLine className="text-2xl text-secondary" />

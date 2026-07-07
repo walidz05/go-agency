@@ -12,7 +12,7 @@ function Hero() {
               {aboutContent.badge}
             </span>
 
-            <h2 className="mt-4 text-3xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="mt-4 text-3xl font-bold text-white leading-tight">
               {aboutContent.title}{" "}
               <span className="text-yellow-400">{aboutContent.highlight}</span>
             </h2>
