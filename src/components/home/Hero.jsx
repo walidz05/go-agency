@@ -14,7 +14,7 @@ function Hero() {
 
       <div className="container mx-auto flex min-h-screen  items-center">
         {/* Left */}
-        <div className="lg:w-[55%] flex flex-col gap-3 items-baseline">
+        <div className="w-[55%] flex flex-col gap-3 items-baseline">
           <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#1A3D73] bg-[#08152D] px-5 py-3 shadow-[0_0_25px_rgba(0,102,255,0.15)]">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0C1E3F] shadow-[0_0_15px_rgba(0,102,255,0.35)]">
               <RiSparkling2Line className="text-lg text-secondary" />
@@ -92,7 +92,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="relative z-10 w-1/2 items-center justify-center lg:w-[45%]">
+        <div className="relative z-10 items-center justify-center w-[45%]">
           {/* Blue Glow */}
 
           <div className="absolute h-[500px] w-[500px] rounded-full bg-blue-700/30 blur-[120px]" />
