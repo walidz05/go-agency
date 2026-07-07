@@ -26,7 +26,7 @@ function Hero() {
           </div>
           <h1
             className="
-                        text-4xl
+                        text-3xl
                         leading-tight
                         font-bold
                         text-white      
@@ -48,8 +48,8 @@ function Hero() {
             </span>
           </p>
 
-          <div className="relative z-10 mt-5 sm:mt-10  flex flex-col gap-4 sm:flex-row sm:w-full w-[60%] ">
-            <Button className="btn btn-primary">Découvrir nos services</Button>
+          <div className="relative z-10 mt-5 sm:mt-10 flex flex-col gap-4 sm:flex-row sm:w-full w-[60%] ">
+            <Button className="btn btn-primary ">Découvrir nos services</Button>
 
             <Button className="btn btn-secondary">
               Discutons de votre projet
