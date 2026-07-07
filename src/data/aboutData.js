@@ -1,11 +1,11 @@
 import { FaBriefcase, FaUsers, FaAward, FaBullseye } from "react-icons/fa";
 
 export const aboutContent = {
-  badge: "QUI SOMMES-NOUS ?",
-  title: "Une agence de communication",
-  highlight: "résultats",
+  badge: "ABOUT US",
+  title: "A Results-Driven",
+  highlight: "Digital Agency",
   description:
-    "Nous aidons les marques ambitieuses à se démarquer dans le digital, à attirer plus de clients et à augmenter leur chiffre d'affaires grâce à des stratégies data-driven et créatives.",
+    "We help ambitious brands stand out in the digital world, attract more customers, and grow their revenue through data-driven strategies, creative solutions, and measurable results.",
 };
 
 export const stats = [
@@ -13,24 +13,24 @@ export const stats = [
     id: 1,
     icon: FaBriefcase,
     number: "50+",
-    title: "Projets réalisés",
+    title: "Projects Completed",
   },
   {
     id: 2,
     icon: FaUsers,
     number: "30+",
-    title: "Clients satisfaits",
+    title: "Happy Clients",
   },
   {
     id: 3,
     icon: FaAward,
     number: "5+",
-    title: "Années d'expérience",
+    title: "Years of Experience",
   },
   {
     id: 4,
     icon: FaBullseye,
     number: "98%",
-    title: "Clients satisfaits",
+    title: "Client Satisfaction",
   },
 ];

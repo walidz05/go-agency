@@ -8,13 +8,13 @@ import {
 } from "react-icons/ri";
 function Hero() {
   return (
-    <section className="relative overflow-hidden] bg-[#040814] py-[60px]">
+    <section className="relative overflow-hidden bg-[#040814] py-[60px]">
       {/* Glow */}
       <div className="absolute left-0 top-0  h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
 
-      <div className="mx-auto flex h-[80vh] min-h-screen max-w-7xl items-center px-6 py-[60px]">
+      <div className="mx-auto flex min-h-screen max-w-7xl items-center px-6 py-20">
         {/* Left */}
-        <div className="w-full lg:w-[70%]">
+        <div className="lg:w-[55%] flex flex-col gap-3 items-baseline">
           <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#1A3D73] bg-[#08152D] px-5 py-3 shadow-[0_0_25px_rgba(0,102,255,0.15)]">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0C1E3F] shadow-[0_0_15px_rgba(0,102,255,0.35)]">
               <RiSparkling2Line className="text-lg text-secondary" />
@@ -24,7 +24,16 @@ function Hero() {
               Agence de communication
             </span>
           </div>
-          <h1 className=" text-[32px] font-bold leading-normal  text-white xl:text-5xl ">
+          <h1
+            className="
+                        text-4xl
+                        leading-tight
+                        font-bold
+                        text-white
+                        sm:text-5xl
+                        xl:text-5xl
+                        "
+          >
             Nous transformons votre
             <span className="text-secondary leading-normal  font-extrabold ml-2">
               communication
@@ -33,14 +42,14 @@ function Hero() {
             en moteur <span className="text-secondary">de croissance</span>
           </h1>
 
-          <p className="mt-7 text-[12px] sm:text-[px] max-w-xl text-lg leading-8 text-gray-200 font-Manrope">
+          <p className="mt-7 text-[12px] sm:text-lg max-w-xl text-lg leading-8 text-gray-200 font-Manrope">
             Stratégie, contenu, publicité et technologie :{" "}
             <span className="text-white/80 font-bold">
               tout ce qu'il faut pour scaler votre marque.
             </span>
           </p>
 
-          <div className="mt-10 flex gap-5 z-10 relative">
+          <div className="relative z-10 mt-10 flex flex-col gap-4 sm:flex-row">
             <Button className="btn btn-primary">Découvrir nos services</Button>
 
             <Button className="btn btn-secondary">
@@ -83,10 +92,10 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="relative hidden w-1/2 items-center justify-center lg:flex">
+        <div className="relative z-10 w-1/2 items-center justify-center lg:w-[45%]">
           {/* Blue Glow */}
 
-          <div className="absolute  h-[500px] w-[500px] rounded-full bg-blue-700/30 blur-[120px]" />
+          <div className="absolute h-[500px] w-[500px] rounded-full bg-blue-700/30 blur-[120px]" />
 
           {/* Phone */}
 
@@ -132,32 +141,6 @@ function Hero() {
               <span className="text-white font-semibold">Meta Partner</span>
             </div>
           </div>
-
-          {/* Revenue Card */}
-          {/* 
-          <div className="absolute bottom-10 right-0 z-30 rounded-2xl border border-white/10 bg-[#111827]/90 p-5 backdrop-blur-xl">
-            <p className="text-sm text-gray-400">Revenus générés</p>
-
-            <h2 className="mt-2 text-3xl font-bold text-white">+$128,540</h2>
-
-            <p className="mt-2 text-green-400">↑ 23.5%</p>
-          </div> */}
-
-          {/* Social Icons */}
-
-          {/* <div className="absolute left-8 top-20 flex flex-col gap-5">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-[#0b1225]">
-              <img src="/icons/meta.png" alt="" className="w-8" />
-            </div>
-
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-[#0b1225]">
-              <img src="/icons/google.png" alt="" className="w-8" />
-            </div>
-
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-[#0b1225]">
-              <img src="/icons/tiktok.png" alt="" className="w-8" />
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
