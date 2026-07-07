@@ -25,7 +25,7 @@ function Hero() {
             </span>
           </div>
           <h1
-            className="w-[90%]
+            className=" w-[90%]
                         sm:w-full
                         text-4xl
                         leading-tight
