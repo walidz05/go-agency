@@ -35,7 +35,7 @@ function TrustedCompanies() {
           Ils nous font confiance
         </p>
 
-        <div className="grid grid-cols-3 sm:grid-cols-5">
+        <div className="grid grid-cols-2 sm:grid-cols-5">
           {companies.map((item) => (
             <div
               key={item.name}

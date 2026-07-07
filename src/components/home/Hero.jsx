@@ -12,9 +12,9 @@ function Hero() {
       {/* Glow */}
       <div className="absolute left-0 top-0  h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
 
-      <div className="container mx-auto flex min-h-screen  items-center">
+      <div className="container mx-auto m sm:flex min-h-screen items-center">
         {/* Left */}
-        <div className="w-[55%] flex flex-col gap-3 items-baseline">
+        <div className="sm:w-[55%] flex flex-col gap-3 items-baseline">
           <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#1A3D73] bg-[#08152D] px-5 py-3 shadow-[0_0_25px_rgba(0,102,255,0.15)]">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0C1E3F] shadow-[0_0_15px_rgba(0,102,255,0.35)]">
               <RiSparkling2Line className="text-lg text-secondary" />
@@ -29,27 +29,26 @@ function Hero() {
                         text-4xl
                         leading-tight
                         font-bold
-                        text-white
-                        sm:text-5xl
-                        xl:text-5xl
+                        text-white      
+                        lg:text-5xl
+                  
                         "
           >
             Nous transformons votre
-            <span className="text-secondary leading-normal  font-extrabold ml-2">
+            <span className="text-secondary leading-normal  font-extrabold mr-2 ml-2">
               communication
             </span>
-            <br />
             en moteur <span className="text-secondary">de croissance</span>
           </h1>
 
-          <p className="mt-7 text-[12px] sm:text-lg max-w-xl text-lg leading-8 text-gray-200 font-Manrope">
+          <p className=" text-[12px]  sm:text-lg max-w-xl text-sm leading-8 text-gray-200 font-Manrope">
             Stratégie, contenu, publicité et technologie :{" "}
             <span className="text-white/80 font-bold">
               tout ce qu'il faut pour scaler votre marque.
             </span>
           </p>
 
-          <div className="relative z-10 mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="relative z-10 mt-5 sm:mt-10  flex flex-col gap-4 sm:flex-row sm:w-full w-[60%] ">
             <Button className="btn btn-primary">Découvrir nos services</Button>
 
             <Button className="btn btn-secondary">
@@ -92,7 +91,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="relative z-10 items-center justify-center w-[45%]">
+        <div className="relative z-10 hidden lg:flex lg:w-[45%] items-center justify-center">
           {/* Blue Glow */}
 
           <div className="absolute h-[500px] w-[500px] rounded-full bg-blue-700/30 blur-[120px]" />
@@ -102,7 +101,7 @@ function Hero() {
           <img
             src={heroImg}
             alt="heroImg"
-            className="z-10"
+            className="z-10 "
             fetchPriority="high"
             decoding="async"
           />
