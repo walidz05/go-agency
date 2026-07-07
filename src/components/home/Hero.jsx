@@ -48,7 +48,7 @@ function Hero() {
             </span>
           </p>
 
-          <div className="relative z-10 mt-5 sm:mt-10 flex flex-col gap-4 sm:flex-row sm:w-full w-[60%] ">
+          <div className="relative z-10 mt-5 sm:mt-10 flex flex-col gap-4 sm:flex-row sm:w-full w-[80%] ">
             <Button className="btn btn-primary ">Découvrir nos services</Button>
 
             <Button className="btn btn-secondary">
