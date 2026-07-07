@@ -26,8 +26,8 @@ function Hero() {
           </div>
           <h1
             className=" 
-                     
-                        text-4xl
+              
+                        text-3xl
                         leading-tight
                         font-bold
                         text-white      
