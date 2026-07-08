@@ -12,20 +12,28 @@ import {
   legalLinks,
 } from "../../data/footerLinks";
 import { memo } from "react";
+import logo from "../../assets/logos/go_footer_cropped.png";
 
 const Footer = () => {
   return (
     <footer className="border-t border-white/10 bg-gradient-to-r from-[#07142A] via-[#081A38] to-[#07142A]">
       <div className="container">
-        <div className="grid gap-12 grid-cols-1  sm:grid-cols-5 py-14 ">
+        <div
+          className="
+    grid
+    grid-cols-1
+    lg:grid-cols-[1.6fr_1fr_1fr_1fr_0.8fr]
+    gap-12
+    py-14
+  "
+        >
           {/* Logo */}
+          <div className="flex flex-col gap-5">
+            <Link to="/">
+              <img src={logo} alt="logo" className="w-auto object-contain" />
+            </Link>
 
-          <div>
-            <h1 className="text-secondary text-3xl uppercase font-extrabold">
-              logo
-            </h1>
-
-            <p className="max-w-xs text-sm leading-7 text-gray-400">
+            <p className="max-w-[220px] text-sm leading-7 text-gray-400 ">
               Votre partenaire digital pour une croissance sans limites.
             </p>
           </div>

@@ -1,6 +1,7 @@
-import { FaArrowRight } from "react-icons/fa";
 import Button from "../ui/Button";
 import NavLinks from "./NavLinks";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logos/logo.png";
 
 const MobileMenu = ({ open, setOpen }) => {
   return (
@@ -31,19 +32,9 @@ const MobileMenu = ({ open, setOpen }) => {
         <div className="flex h-full flex-col px-8 py-8">
           {/* Logo */}
 
-          <h1
-            className="
-            mb-12
-            cursor-pointer
-            text-[34px]
-            font-extrabold
-            tracking-[-1px]
-            text-white
-          "
-          >
-            Go
-            <span className="text-secondary">Boosted</span>
-          </h1>
+          <Link to="/">
+            <img src={logo} alt="GoBoosted" className="w-[170px] h-auto" />
+          </Link>
 
           {/* Navigation */}
 

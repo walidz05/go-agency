@@ -4,6 +4,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
 import { memo } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logos/logo.png";
 const Navbar = ({ open, setOpen }) => {
   return (
     <header
@@ -23,21 +24,7 @@ const Navbar = ({ open, setOpen }) => {
       <div className="container flex h-[82px] items-center justify-between">
         {/* Logo */}
         <Link to="/">
-          <h1
-            className="
-        cursor-pointer
-        text-[28px]
-        font-extrabold
-        tracking-[-1px]
-        text-white
-        transition-all
-        duration-300
-        hover:scale-105
-      "
-          >
-            Go
-            <span className="text-secondary">Boosted</span>
-          </h1>
+          <img src={logo} alt="GoBoosted" className="w-[170px] h-auto" />
         </Link>
 
         {/* Desktop Menu */}
