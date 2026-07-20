@@ -44,15 +44,18 @@ const OfficeLocation = () => {
                   </h3>
 
                   <p className="mt-3 text-gray-300">
-                    123 Avenue Hassan II
+                    6e étage, N°29, Imm. Shehrazad, Rue Soumaya, Bd Abdelmoumen,
+                    Casablanca 20340
                     <br />
                     Casablanca, Maroc
                   </p>
 
-                  <button className="mt-5 flex items-center gap-2 rounded-lg border border-primary px-5 py-3 text-primary transition hover:bg-primary hover:text-black">
-                    Itinéraire
-                    <RiArrowRightLine />
-                  </button>
+                  <Link to="https://www.google.com/maps/dir/33.551578,-7.684551/Go+%26+Study+-+%C3%89tudier+%C3%A0+l%E2%80%99%C3%A9tranger,+6e+%C3%A9tage,+N%C2%B029,+Imm.+Shehrazad,+Rue+Soumaya,+Bd+Abdelmoumen,+Casablanca+20340/@33.578743,-7.6554956,19.13z/data=!4m15!4m14!1m6!3m4!1m2!1d-7.6551421!2d33.5787033!3s0xda7d2df627f560d:0xb34338558fa0b233!4e1!1m5!1m1!1s0xda7d3faf9c6410f:0x89c44f30cf479183!2m2!1d-7.626365!2d33.5772856!3e0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D">
+                    <button className="mt-5 flex items-center gap-2 rounded-lg border border-primary px-5 py-3 text-primary transition hover:bg-primary hover:text-black">
+                      Itinéraire
+                      <RiArrowRightLine />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
