@@ -1,11 +1,11 @@
-import { FaBriefcase, FaUsers, FaAward, FaBullseye } from "react-icons/fa";
+import { FaBriefcase, FaUsers, FaAward } from "react-icons/fa";
 
 export const aboutContent = {
-  badge: "ABOUT US",
-  title: "A Results-Driven",
-  highlight: "Digital Agency",
+  badge: "À propos",
+  title: "Une agence digitale",
+  highlight: "orientée résultats",
   description:
-    "We help ambitious brands stand out in the digital world, attract more customers, and grow their revenue through data-driven strategies, creative solutions, and measurable results.",
+    "Nous aidons les entreprises ambitieuses à se démarquer dans l’univers numérique, à attirer davantage de clients et à développer leur chiffre d’affaires grâce à des stratégies basées sur les données, des solutions créatives et des résultats mesurables.",
 };
 
 export const stats = [
@@ -13,24 +13,18 @@ export const stats = [
     id: 1,
     icon: FaBriefcase,
     number: "50+",
-    title: "Projects Completed",
+    title: "Projets réalisés",
   },
   {
     id: 2,
     icon: FaUsers,
     number: "30+",
-    title: "Happy Clients",
+    title: "Clients satisfaits",
   },
   {
     id: 3,
     icon: FaAward,
     number: "5+",
-    title: "Years of Experience",
-  },
-  {
-    id: 4,
-    icon: FaBullseye,
-    number: "98%",
-    title: "Client Satisfaction",
+    title: "Années d'expérience",
   },
 ];

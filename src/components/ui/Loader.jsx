@@ -16,7 +16,7 @@ const Loader = () => {
         </div>
 
         <h1 className="mt-8 text-3xl font-extrabold text-white">
-          Go<span className="text-secondary">Boosted</span>
+          Go<span className="text-secondary">Boost - agency</span>
         </h1>
 
         <p className="mt-3 text-sm text-gray-400">Loading Experience...</p>

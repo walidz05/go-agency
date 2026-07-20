@@ -6,6 +6,7 @@ import {
 } from "react-icons/ri";
 
 import mapImg from "../../assets/images/map.webp";
+import { Link } from "react-router-dom";
 
 const OfficeLocation = () => {
   return (
@@ -58,13 +59,12 @@ const OfficeLocation = () => {
           </div>
 
           {/* Right Card */}
-          <div className="relative overflow-hidden rounded-2xl border border-[#16356A] bg-[#071126] p-8">
+          <div className="  justify-center flex flex-col overflow-hidden rounded-2xl border border-[#16356A] bg-[#071126] p-10">
             <div className="absolute right-0 top-1/2 h-72 w-72 rounded-full bg-blue-600/10 blur-[120px]" />
 
             <h2 className="text-2xl font-bold leading-tight text-white">
               Discutons de <span className="text-secondary">votre projet</span>
               <br />
-              autour d'un café <RiCupLine className="inline text-secondary" />
             </h2>
 
             <p className="mt-6 leading-8 text-gray-400">
@@ -87,10 +87,12 @@ const OfficeLocation = () => {
               ))}
             </div>
 
-            <button className="mt-10 flex items-center gap-2 rounded-lg border border-primary px-6 py-4 font-medium text-primary transition hover:bg-primary hover:text-black">
-              Planifier un rendez-vous
-              <RiArrowRightLine />
-            </button>
+            <a href="#form">
+              <button className="mt-10 flex items-center gap-2 rounded-lg border border-primary px-6 py-4 font-medium text-primary transition hover:bg-primary hover:text-black">
+                Planifier un rendez-vous
+                <RiArrowRightLine />
+              </button>
+            </a>
           </div>
         </div>
       </div>

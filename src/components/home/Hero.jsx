@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "../../assets/images/heor-right.webp";
 import Button from "../ui/Button";
 import {
@@ -8,7 +9,7 @@ import {
 } from "react-icons/ri";
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#040814] py-[60px]">
+    <section className="relative overflow-hidden bg-[#040814] py-[60px] z-10">
       {/* Glow */}
       <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-blue-700/20 blur-[160px]" />
 
@@ -49,11 +50,11 @@ function Hero() {
           </p>
 
           <div className="relative z-10 mt-5 sm:mt-10 flex flex-col gap-4 sm:flex-row sm:w-full w-[80%] ">
-            <Button className="btn btn-primary ">Découvrir nos services</Button>
-
-            <Button className="btn btn-secondary">
-              Discutons de votre projet
-            </Button>
+            <Link to="/services">
+              <Button className="btn btn-primary ">
+                Découvrir nos services
+              </Button>
+            </Link>
           </div>
 
           <div className="mt-12 flex flex-wrap items-center gap-8 text-white">
@@ -82,7 +83,7 @@ function Hero() {
                 <RiLock2Line className="text-lg text-secondary" />
               </div>
 
-              <span className="text-sm font-medium">Sans engagement</span>
+              <span className="text-sm font-medium">Support disponible</span>
             </div>
           </div>
 

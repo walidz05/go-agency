@@ -3,7 +3,7 @@ export const navigationLinks = [
     title: "Navigation",
     links: [
       { name: "Accueil", href: "/" },
-      { name: "À propos", href: "/about" },
+      { name: "À propos", href: "/apropos" },
       { name: "Services", href: "/services" },
       { name: "Contact", href: "/contact" },
     ],
@@ -16,12 +16,12 @@ export const serviceLinks = [
     links: [
       {
         name: "Stratégie Marketing 360°",
-        href: "/services/strategie-marketing-360",
+        href: "/services#services-section",
       },
-      { name: "Audit Digital", href: "/services/audit-digital" },
-      { name: "Social Media", href: "/services/social-media-management" },
-      { name: "Création de site web", href: "/services/creation-site-web" },
-      { name: "Production vidéo", href: "/services/production-video" },
+      { name: "Audit Digital", href: "/services#services-section" },
+      { name: "Social Media", href: "/services#services-section" },
+      { name: "Création de site web", href: "/services#services-section" },
+      { name: "Production vidéo", href: "/services#services-section" },
     ],
   },
 ];
@@ -29,9 +29,6 @@ export const serviceLinks = [
 export const legalLinks = [
   {
     title: "Mentions légales",
-    links: [
-      { name: "Politique de confidentialité", href: "/privacy-policy" },
-      { name: "CGV", href: "/cgv" },
-    ],
+    links: [{ name: "Politique de confidentialité", href: "/politique" }],
   },
 ];

@@ -39,8 +39,8 @@ const Hero = () => {
             </span>
 
             <h2 className="mt-4 text-3xl font-bold text-white leading-tight">
-              Des solutions marketing pour booster votre {}
-              <span className="text-secondary">croissance digitale.</span>
+              Boostez votre croissance grâce à des stratégies {""}
+              <span className="text-secondary">marketing performantes</span>
             </h2>
 
             <p className="mt-6 max-w-xl text-sm sm:text-lg leading-8 text-gray-400">
@@ -66,7 +66,7 @@ const Hero = () => {
                       {service.title}
                     </h3>
 
-                    <p className="mt-3 text-[14px] text-sm leading-5 text-gray-400">
+                    <p className="mt-3 text-sm sm:text-[12px] leading-5 text-gray-400">
                       {service.description}
                     </p>
                   </div>

@@ -6,7 +6,7 @@ export default function WhyChoose() {
   return (
     <section className="py-[60px]">
       <Heading
-        children1="Pourquoi choisir go&Study"
+        children1="Pourquoi choisir GoBoost agency"
         children2="Nous combinons expertise, créativité et performance pour offrir des
           résultats qui font la différence."
         textAlign="center"

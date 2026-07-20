@@ -17,11 +17,11 @@ function Hero() {
               <span className="text-yellow-400">{aboutContent.highlight}</span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-sm sm:text-lg leading-8 text-gray-400">
+            <p className="mt-6 max-w-xl text-sm sm:text-[16px] leading-8 text-gray-400">
               {aboutContent.description}
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-12">
               {stats.map((item) => {
                 const Icon = item.icon;
 

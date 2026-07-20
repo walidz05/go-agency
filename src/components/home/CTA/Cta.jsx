@@ -1,13 +1,34 @@
 import { FaArrowRight } from "react-icons/fa";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ctaData } from "../../../data/CTAData";
 import Button from "../../ui/Button";
 
 export default function Cta() {
   const Icon = ctaData.icon;
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // إذا كنت فصفحة Contact
+    if (location.pathname === "/contact") {
+      const section = document.getElementById("contact-form");
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    } else {
+      // إذا كنت فشي صفحة أخرى
+      navigate("/contact#contact-form");
+    }
+  };
+
   return (
-    <section className="">
-      <div className="container mx-auto ">
+    <section>
+      <div className="container mx-auto">
         <div className="relative overflow-hidden rounded-3xl border border-[#164EBC] bg-[#07132A] px-8 py-8">
           {/* Glow Left */}
           <div className="absolute -left-20 top-1/2 h-52 w-52 -translate-y-1/2 rounded-full bg-blue-500/20 blur-[120px]" />
@@ -15,11 +36,9 @@ export default function Cta() {
           {/* Glow Right */}
           <div className="absolute -right-24 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-blue-600/20 blur-[130px]" />
 
-          {/* Decorative Circle */}
+          {/* Decorative Circles */}
           <div className="absolute right-64 top-0 h-72 w-72 rounded-full border border-blue-500/20" />
           <div className="absolute right-60 top-6 h-72 w-72 rounded-full border border-blue-500/10" />
-
-          {/* Small Dot */}
 
           <div className="relative flex flex-col items-center justify-between gap-8 lg:flex-row">
             {/* Left */}
@@ -31,20 +50,19 @@ export default function Cta() {
               </div>
 
               <div>
-                <h2 className="sm:text-3xl font-bold text-white">
+                <h2 className="text-center text-2xl font-bold text-white lg:text-left">
                   {ctaData.title}
                 </h2>
 
-                <p className="mt-2 text-sm sm:text-lg text-slate-400">
+                <p className="mt-2 text-center text-slate-400 lg:text-left">
                   {ctaData.description}
                 </p>
               </div>
             </div>
 
             {/* Button */}
-
-            <Button className="btn btn-secondary">
-              {ctaData.button}{" "}
+            <Button onClick={handleClick} className="btn btn-secondary group">
+              {ctaData.button}
               <FaArrowRight className="transition duration-300 group-hover:translate-x-1" />
             </Button>
           </div>

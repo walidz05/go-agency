@@ -1,28 +1,21 @@
 import { portfolio } from "../../data/portfolioData";
-import { FaArrowRight } from "react-icons/fa";
 import Heading from "../ui/Heading";
 
 const Portfolio = () => {
   return (
-    <section className=" container py-[60px]">
+    <section className=" container py-[60px] ">
       <div className="container-custom">
         {/* Header */}
 
-        <div className="flex items-center justify-between mb-[30px]">
-          <Heading children2="Nos derniers succès" textAlign="left"></Heading>
-
-          <button className="group flex items-center gap-2 text-primary font-semibold hover:text-secondary duration-300">
-            Voir tous les projets
-            <FaArrowRight
-              size={20}
-              className="group-hover:translate-x-1 duration-300"
-            />
-          </button>
-        </div>
+        <Heading
+          children1="NOS CLIENTS"
+          children2="Nous transformons les idées de nos clients en expériences digitales performantes"
+          textAlign="center"
+        ></Heading>
 
         {/* Cards */}
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mt-10 ">
           {portfolio.map((item) => (
             <article
               key={item.id}
@@ -39,30 +32,26 @@ const Portfolio = () => {
                 hover:shadow-[0_15px_45px_rgba(0,87,183,.18)]
               "
             >
-              <div className="overflow-hidden">
+              <div className="h-64 w-full overflow-hidden rounded-t-2xl bg-[#0F172A] flex items-center justify-center">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="
-                    h-64
-                    w-full
-                    object-cover
-                    duration-700
-                    group-hover:scale-110
-                  "
+                                w-full
+                                h-full
+                                object-contain
+                                p-6
+                                transition-transform
+                                duration-700
+                                group-hover:scale-105
+                              "
                 />
               </div>
 
-              <div className="p-7">
+              <div className="p-7 text-center">
                 <h3 className="text-xl font-semibold text-white mb-5">
                   {item.title}
                 </h3>
-
-                <h4 className="text-2xl font-bold text-primary mb-3">
-                  {item.value}
-                </h4>
-
-                <p className="text-gray-400">{item.description}</p>
               </div>
             </article>
           ))}

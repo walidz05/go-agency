@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { lazy } from "react";
+import Politique from "../pages/Politique/Politique";
 
 const Home = lazy(() => import("../pages/Home/Home"));
 const Apropos = lazy(() => import("../pages/apropos/Apropos"));
@@ -15,6 +16,7 @@ function Router() {
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/politique" element={<Politique />} />
       </Routes>
     </>
   );

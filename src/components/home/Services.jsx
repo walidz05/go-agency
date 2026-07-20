@@ -5,7 +5,7 @@ function Services() {
   return (
     <div className="container py-[60px]">
       <Heading
-        children1="NOS EXPERTISES"
+        children1="NOS SERVICES"
         children2="Des solutions complètes pour booster votre marque"
         textAlign="center"
       ></Heading>
@@ -46,14 +46,7 @@ function Services() {
                 <p className="leading-7 text-slate-400">
                   {service.description}
                 </p>
-                <div className="mt-[20px]">
-                  <Link
-                    to=""
-                    className="text-white font-bold text-[12px] hover:text-gray-300 "
-                  >
-                    Lire la suite →
-                  </Link>
-                </div>
+                <div className="mt-[20px]"></div>
               </div>
             );
           })}

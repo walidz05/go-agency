@@ -1,22 +1,18 @@
-import { HiOutlineArrowRight, HiCheckCircle } from "react-icons/hi2";
+import { HiCheckCircle } from "react-icons/hi2";
 import { services } from "../../data/servicesData";
 import Heading from "../ui/Heading";
 
 const ServicesList = () => {
   return (
-    <section className="py-[60px]">
+    <section className="py-[60px]" id="services-section">
       <div className="container mx-auto">
         {/* Heading */}
         <div className="mb-14 text-center">
           <Heading
-            children1="NOS EXPERTISES"
-            children2="Nos services pour accélérer votre"
+            children1="NOS SERVICES"
+            children2=""
             textAlign="center"
           ></Heading>
-
-          <p className="mt-4 text-gray-400">
-            Des solutions complètes adaptées à vos objectifs business.
-          </p>
         </div>
 
         {/* Cards */}
@@ -56,12 +52,6 @@ const ServicesList = () => {
                     </li>
                   ))}
                 </ul>
-
-                {/* Button */}
-                <button className="mt-auto flex items-center gap-2 pt-8 text-primary transition-all group-hover:gap-3">
-                  En savoir plus
-                  <HiOutlineArrowRight />
-                </button>
               </div>
             );
           })}

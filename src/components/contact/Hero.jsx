@@ -11,7 +11,7 @@ import { HiOutlineArrowRight } from "react-icons/hi2";
 
 const Hero = ({ formData, handleChange, handleSubmit }) => {
   return (
-    <section className="py-[60px]">
+    <section className="py-[60px]" id="contact-form">
       <div className="container mx-auto">
         <div className="grid gap-12 lg:grid-cols-2">
           {/* Left */}
@@ -26,7 +26,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
               et <span className="text-secondary">concrétisons vos idées.</span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-sm sm:text-lg leading-8 text-gray-400">
+            <p className="mt-6 max-w-xl text-sm sm:text-[16px] leading-8 text-gray-400">
               Une question, un projet ou simplement envie d'échanger ? Notre
               équipe est à votre écoute pour vous accompagner vers le succès.
             </p>
@@ -53,11 +53,11 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
                 </div>
 
                 <h4 className="mt-4 font-semibold text-white">
-                  Sans engagement
+                  Support disponible
                 </h4>
 
                 <p className="mt-2 text-sm text-gray-400">
-                  Échangeons librement sur vos objectifs.
+                  Un support réactif à votre écoute
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
               Envoyez-nous un message
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-5 ">
+            <form onSubmit={handleSubmit} className="space-y-5 " id="form">
               <div className="grid gap-5 md:grid-cols-2">
                 <input
                   value={formData.name}

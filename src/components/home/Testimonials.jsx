@@ -2,74 +2,105 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import { testimonialsData } from "../../data/testimonialsData";
 import Heading from "../ui/Heading";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 const Testimonials = () => {
   return (
-    <section className="py-[60px] px-6 container">
+    <section className="container py-[60px]">
       <Heading
-        children1="que nous-mémes."
-        children2="ils parlent mieux de nous"
+        children1="ILS NOUS FONT CONFIANCE."
+        children2="Découvrez pourquoi nos clients nous recommandent"
         textAlign="center"
-      ></Heading>
-      <div className="max-w-7xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-[30px]">
-        {testimonialsData.map((item) => {
-          const Logo = item.logo;
+      />
 
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        loop={true}
+        spaceBetween={24}
+        speed={800}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1280: {
+            slidesPerView: 4,
+          },
+        }}
+        className="mt-10 pb-14"
+      >
+        {testimonialsData.map((item) => {
           const text = item.text.replace(
             item.highlight,
             `__${item.highlight}__`
           );
 
           return (
-            <div
-              key={item.id}
-              className="rounded-2xl border border-[#1b2a42] bg-[#081322] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500"
-            >
-              <FaQuoteLeft className="mb-5 text-3xl text-blue-600" />
+            <SwiperSlide key={item.id} className="mt-10 pb-24">
+              <div
+                className="
+                  h-full
+                  min-h-[360px]
+                  rounded-2xl
+                  border
+                  border-[#1b2a42]
+                  bg-[#081322]
+                  p-7
+                  transition-all
+                  duration-500
+                  hover:-translate-y-2
+                  hover:border-[#0057B7]
+                  hover:shadow-[0_20px_60px_rgba(0,87,183,.25)]
+                  flex
+                  flex-col
+                "
+              >
+                <FaQuoteLeft className="mb-5 text-3xl text-[#0057B7]" />
 
-              <div className="mb-6 flex gap-1 text-yellow-400">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} size={14} />
-                ))}
-              </div>
-
-              <p className="leading-8 text-gray-300">
-                {text.split("__").map((part, index) =>
-                  index % 2 ? (
-                    <span key={index} className="font-semibold text-blue-500">
-                      {part}
-                    </span>
-                  ) : (
-                    part
-                  )
-                )}
-              </p>
-
-              <div className="my-8 h-[2px] w-16 bg-blue-600"></div>
-
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <img
-                    loading="lazy"
-                    src={item.image}
-                    alt={item.name}
-                    className="h-12 w-12 rounded-full border-2 border-blue-500 object-cover"
-                  />
-
-                  <div>
-                    <h4 className="font-semibold text-white">{item.name}</h4>
-
-                    <p className="text-sm text-gray-500">{item.role}</p>
-
-                    <p className="text-sm text-blue-500">{item.company}</p>
-                  </div>
+                <div className="mb-6 flex gap-1 text-[#FFD700]">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} size={14} />
+                  ))}
                 </div>
 
-                <Logo className="text-3xl text-white" />
+                <p className="flex-1 leading-8 text-gray-300">
+                  {text.split("__").map((part, index) =>
+                    index % 2 ? (
+                      <span
+                        key={index}
+                        className="font-semibold text-[#0057B7]"
+                      >
+                        {part}
+                      </span>
+                    ) : (
+                      part
+                    )
+                  )}
+                </p>
+
+                <div className="my-8 h-[2px] w-16 bg-[#0057B7]" />
               </div>
-            </div>
+            </SwiperSlide>
           );
         })}
-      </div>
+      </Swiper>
     </section>
   );
 };

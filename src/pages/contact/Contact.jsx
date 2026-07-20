@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hero from "../../components/contact/Hero";
 import Cta from "../../components/home/CTA/Cta";
 import { sendContact } from "../../services/contactService";
 import OfficeLocation from "../../components/services/OfficeLocation";
 import { toast } from "sonner";
+import { useLocation } from "react-router-dom";
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -13,6 +14,20 @@ function Contact() {
     service: "",
     message: "",
   });
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#contact-form") {
+      const timer = setTimeout(() => {
+        document.getElementById("contact-form")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, [location]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -9,7 +9,7 @@ export const testimonialsData = [
     image: "https://i.pravatar.cc/100?img=12",
     logo: SiShopify,
     highlight: "240%",
-    text: "Grâce à Boosted, nous avons augmenté notre chiffre d'affaires de 240% en seulement 6 mois.",
+    text: "Une équipe professionnelle et très réactive. Les résultats sont au rendez-vous.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const testimonialsData = [
     image: "https://i.pravatar.cc/100?img=5",
     logo: SiMeta,
     highlight: "transformé",
-    text: "Une équipe professionnelle, réactive et à l'écoute. Leur stratégie a transformé notre présence en ligne.",
+    text: "Très satisfait de notre collaboration. Je recommande Go Boost Agency.",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const testimonialsData = [
     image: "https://i.pravatar.cc/100?img=15",
     logo: SiGoogleads,
     highlight: "+300%",
-    text: "Leur expertise en publicité et en contenu nous a permis de générer +300% de leads qualifiés.",
+    text: "Des leads de qualité et un excellent suivi tout au long des campagnes.",
   },
   {
     id: 4,
@@ -39,6 +39,28 @@ export const testimonialsData = [
     image: "https://i.pravatar.cc/100?img=47",
     logo: SiTiktok,
     highlight: "résultats",
-    text: "Boosted ne se contente pas de promettre, ils livrent des résultats concrets et mesurables.",
+    text: "Une agence sérieuse qui comprend rapidement les besoins de ses clients.",
+  },
+
+  {
+    id: 5,
+    name: "Nadia El Amrani",
+    role: "CEO",
+    company: "Luxury Boutique",
+    image: "https://i.pravatar.cc/100?img=47",
+    logo: SiTiktok,
+    highlight: "résultats",
+    text: "Nous avons obtenu de très bons résultats dès les premières semaines",
+  },
+
+  {
+    id: 6,
+    name: "Nadia El Amrani",
+    role: "CEO",
+    company: "Luxury Boutique",
+    image: "https://i.pravatar.cc/100?img=47",
+    logo: SiTiktok,
+    highlight: "résultats",
+    text: "Une communication fluide et une équipe toujours disponible.",
   },
 ];

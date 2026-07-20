@@ -7,12 +7,15 @@ import Testimonials from "../../components/home/Testimonials";
 import Process from "../../components/home/Process";
 import WhyChoose from "../../components/home/WhyChoose/WhyChoose";
 import Cta from "../../components/home/CTA/Cta";
+import Results from "../../components/home/Results";
+
 function Home() {
   return (
     <>
       <Hero />
       <TrustedCompanies />
       <Services />
+      <Results />
       <WhyChoose />
       <Process />
       <StatsSeconde />

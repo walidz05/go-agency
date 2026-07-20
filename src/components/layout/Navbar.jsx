@@ -34,14 +34,14 @@ const Navbar = ({ open, setOpen }) => {
         </nav>
 
         {/* CTA */}
-
-        <Button
-          className=" hidden
-        sm:flex btn btn-primary"
-        >
-          {" "}
-          Demander un devis
-        </Button>
+        <Link to="/contact">
+          <Button
+            className=" hidden
+              sm:flex btn btn-primary"
+          >
+            Demander un devis
+          </Button>
+        </Link>
 
         {/* Mobile Menu */}
 
