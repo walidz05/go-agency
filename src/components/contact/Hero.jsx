@@ -193,7 +193,7 @@ const Hero = ({ formData, handleChange, handleSubmit }) => {
 
             <div>
               <h4 className="font-semibold text-white">Email</h4>
-              <p className="text-gray-400">contact@gostudy.agency</p>
+              <p className="text-gray-400">goboosta@gmail.com</p>
               <span className="text-sm text-gray-500">Réponse sous 24h</span>
             </div>
           </div>

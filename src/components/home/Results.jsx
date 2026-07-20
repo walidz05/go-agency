@@ -25,7 +25,7 @@ export default function Results() {
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={24}
-          loop={true}
+          loop
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
@@ -47,7 +47,7 @@ export default function Results() {
           className="mt-10 pb-14"
         >
           {resultsData.map((item) => (
-            <SwiperSlide key={item.id} className="pb-8">
+            <SwiperSlide key={item.id} className="mt-10 pb-24">
               <div
                 className="
                   rounded-3xl
@@ -61,7 +61,7 @@ export default function Results() {
                   hover:border-blue-500
                 "
               >
-                <div className="aspect-[16/9] overflow-hidden rounded-2xl">
+                <div className="aspect-[16/9] overflow-hidden rounded-2xl bg-[#081322] flex items-center justify-center">
                   <img
                     src={item.img}
                     alt={item.title}
@@ -69,8 +69,8 @@ export default function Results() {
                     className="
                       h-full
                       w-full
+                      object-contain
                       cursor-zoom-in
-                      object-cover
                       transition-transform
                       duration-500
                       hover:scale-105
@@ -82,8 +82,7 @@ export default function Results() {
           ))}
         </Swiper>
 
-        {/* Image Modal */}
-
+        {/* Modal */}
         {selectedImage && (
           <div
             onClick={() => setSelectedImage(null)}
@@ -94,20 +93,17 @@ export default function Results() {
               flex
               items-center
               justify-center
-              bg-black/80
+              bg-black/90
               backdrop-blur-md
               p-6
-              animate-fadeIn
             "
           >
-            {/* Close Button */}
-
             <button
               onClick={() => setSelectedImage(null)}
               className="
                 absolute
-                right-6
                 top-6
+                right-6
                 flex
                 h-12
                 w-12
@@ -123,19 +119,16 @@ export default function Results() {
               <IoClose size={28} />
             </button>
 
-            {/* Image */}
-
             <img
               src={selectedImage}
-              alt=""
+              alt="Preview"
               onClick={(e) => e.stopPropagation()}
               className="
                 max-h-[90vh]
                 max-w-[90vw]
                 rounded-2xl
-                shadow-[0_30px_80px_rgba(0,0,0,.6)]
                 object-contain
-                animate-scaleIn
+                shadow-[0_30px_80px_rgba(0,0,0,.6)]
               "
             />
           </div>
